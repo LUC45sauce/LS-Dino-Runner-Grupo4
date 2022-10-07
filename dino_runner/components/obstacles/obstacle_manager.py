@@ -33,6 +33,9 @@ class ObstacleManager():
                 self.obstacles.pop()
                 if game.death_count == 3:
                     game.playing = False
-                break
+                    game.game_running = True
+                    game.excute()
+                    print(game.death_count)
+              
 
    
